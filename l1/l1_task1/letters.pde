@@ -1,7 +1,8 @@
 import Turtle.*;
 
-void drawI(Turtle t, int s1, int s2, float x, float y) {
-  setXY(x, y);
+// Draw a basic capital I
+void drawI(Turtle t, int s1, int s2, float x, float y, float rotation) {
+  setXY(x, y, rotation);
   t.setHeading(90);
   t.forward(s1);
   t.push();
@@ -17,8 +18,9 @@ void drawI(Turtle t, int s1, int s2, float x, float y) {
   t.forward(s1);
 }
 
-void drawT(Turtle t, int s1, int s2, float x, float y) {
-  setXY(x, y);
+// Draw a basic capital T
+void drawT(Turtle t, int s1, int s2, float x, float y, float rotation) {
+  setXY(x, y, rotation);
   t.forward(s2);
   t.push();
   t.setHeading(-90);

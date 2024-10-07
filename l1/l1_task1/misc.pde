@@ -1,13 +1,15 @@
 import processing.svg.*;
 import Turtle.*;
 
-void setXY(float x, float y) {
+// Basic utility function for quickly setting the x/y and the rotation
+void setXY(float x, float y, float rotation) {
   t.setX(x);
   t.setY(y);
-  t.setHeading(0);
+  t.setHeading(rotation);
 }
 
 // Handles key press events
+// Code taken from Michael Riveria's csci 7000 computational fabrication class code
 void keyPressed() { 
   // press 's' to save a svg of your drawing
   if (key == 's') {
@@ -22,6 +24,7 @@ void keyPressed() {
 } 
 
 // Generates a date string of the format year_month_day-hour_min_second
+// Code taken from Michael Riveria's csci 7000 computational fabrication class code
 String getDateString() {
   String time = str(hour()) + "_" + str(minute()) + "_" + str(second());
   String date = str(year()) + "_" + str(month()) + "_" + str(day());

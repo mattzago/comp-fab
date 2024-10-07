@@ -1,2 +1,5 @@
 # Ignore svg files
 *.svg
+
+# Misc
+.DS_Store
